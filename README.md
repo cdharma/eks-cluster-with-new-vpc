@@ -31,9 +31,9 @@ You can find the policy [here](min-iam-policy.json)
 git clone https://github.com/aws-ia/terraform-aws-eks-blueprints.git
 ```
 
-#### Step 2: Run Terraform INIT
+#### Step 2: Update the file from this Repor & Run Terraform INIT
 
-Initialize a working directory with configuration files
+Udpate the below directory with configuration files from this repo. 
 
 ```sh
 cd examples/eks-cluster-with-new-vpc/
@@ -58,6 +58,8 @@ terraform apply
 ```
 
 Enter `yes` to apply.
+
+You can deploy in multiple stages as well by specifying the target module while running terraform apply. For example terraform apply -target="module.vpc"
 
 ### Configure `kubectl` and test cluster
 
